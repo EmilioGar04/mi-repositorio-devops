@@ -41,5 +41,6 @@ jobs:
           file: ./app/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: docker.io/EmilioGar04/flask-devops-app:latest
+          tags: docker.io/emiliogar04/flask-devops-app:latest
+
 
