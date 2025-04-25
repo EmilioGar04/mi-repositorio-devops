@@ -25,8 +25,9 @@ jobs:
           password: ${{ secrets.TOKENACT3 }}
 
       - name: Build and push Docker image
-        id: docker_build_push
         uses: docker/build-push-action@v3
         with:
+          context: .
+          file: ./Dockerfile
           push: true
           tags: ghcr.io/${{ github.mi-repositorio-devops }}:latest
